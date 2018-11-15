@@ -1,1 +1,37 @@
 +=++++++++++++++++++++++++
+
+public class Nuvel extends Books {
+
+    private String [] gen = {
+            "roman", "psihologica","poveste","abecedar","roman politist","dezvoltare personala"
+    };
+
+
+    @Override
+    public boolean suportType(String type) {
+        int i=0;
+        for(i=i;i< gen.length;i++){
+            if(gen[i] == type)
+            {
+                boolean b = true;
+                return b;
+
+            }
+
+
+        }
+
+        return false;
+
+
+    }
+
+    @Override
+    public String introduceBook(String name, int pages, String type) {
+        return "Nuvel: " + name + "  Pages:" + pages + " Type:" + type ;
+
+    }
+
+}
+
+
